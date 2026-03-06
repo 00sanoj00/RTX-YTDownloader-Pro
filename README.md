@@ -2,7 +2,7 @@
   <img src="assaset/logoo.png" alt="RTX YTDownloader Logo" width="800px">
 </p>
 
-# 🚀 RTX YTDownloader Pro v3.0
+# 🚀 RTX YTDownloader Pro
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 **RTX YTDownloader Pro** is a high-performance, lightweight YouTube media downloader designed for Linux. Built with **Rust** and **Tauri**, it offers a seamless experience for extracting high-quality audio with a modern, futuristic interface.

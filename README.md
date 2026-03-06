@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.ibb.co/0Rj6BqFW/logoo.png" alt="RTX YTDownloader Logo" width="200px">
+  <img src="assaset/logoo.png" alt="RTX YTDownloader Logo" width="800px">
 </p>
 
 # 🚀 RTX YTDownloader Pro v3.0

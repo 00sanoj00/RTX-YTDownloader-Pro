@@ -1,10 +1,10 @@
 [package]
-name = "app"
-version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
+name = "rtx-ytdown"
+version = "1.0.1"
+description = "A high-performance YouTube video and audio downloader built with Rust and Tauri."
+authors = ["Sanoj RTX <00sanoj00@gmail.com>"]
+license = "GPL-3.0-only"
+repository = "https://github.com/yourusername/rtx-ytdown"
 edition = "2021"
 rust-version = "1.77.2"
 
@@ -14,15 +14,22 @@ rust-version = "1.77.2"
 name = "app_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
+[profile.release]
+opt-level = 3
+overflow-checks = true   # debug trap catch කරන්න
+
 [build-dependencies]
 tauri-build = { version = "2.5.6", features = [] }
 
 [dependencies]
+zip = "2"
+home = "0.5"
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
 log = "0.4"
-tauri = { version = "2.10.3", features = [] }
+tauri = { version = "2.0.0", features = [] } # v2.x version එකක් පාවිච්චි කරන්න
 tauri-plugin-log = "2"
-tauri-plugin-dialog = "2.6.0"
-tauri-plugin-shell = "2" # මේක අලුතින් එකතු වුණා
-tokio = { version = "1.50.0", features = ["full"] }
+tauri-plugin-dialog = "2"
+tauri-plugin-shell = "2"
+tauri-plugin-fs = "2"        # <--- මේක අනිවාර්යයෙන්ම ඕනේ (File System)
+tokio = { version = "1", features = ["full"] }

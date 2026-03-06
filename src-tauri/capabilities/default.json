@@ -11,7 +11,12 @@
     "core:window:default",
     "dialog:default",
     "dialog:allow-message",
-    "dialog:allow-open"
+    "dialog:allow-open",
+    "dialog:allow-save",
+    "dialog:allow-ask",
+    "dialog:allow-confirm",
+    "shell:allow-execute",
+    "shell:allow-spawn"
   ]
 }
 
